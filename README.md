@@ -96,35 +96,35 @@ DNA序列有ATGC四种可能，对于genbank中的基因序列资源，可能含
 
 格式展示
 
-![Fasta](images\fasta.png)
+![Fasta](images/fasta.png)
 
 2.将 `tree.py`、`upgma.py`、`sequence.py`、`gui.py`放在根目录下，确保文件之间的import可执行
 
-![image-20260606232743492](C:\Users\嵇兕\AppData\Roaming\Typora\typora-user-images\image-20260606232743492.png)
+![Pycharm](images/py.png)
 
 3.运行`gui.py`
 
-![image-20260606232852273](C:\Users\嵇兕\AppData\Roaming\Typora\typora-user-images\image-20260606232852273.png)
+![Main](images/Builder_main.png)
 
 4.点击**Browse FASTA**打开目标文件（会显示文件名），选择一个**Distance Model**（model介绍见上文）
 
-![image-20260606233438991](C:\Users\嵇兕\AppData\Roaming\Typora\typora-user-images\image-20260606233438991.png)
+![Controls](images/Builder_controls.png)
 
 5.点击**Build Tree**建树
 
 Phylogenetic Tree, Distance Matrix, Newick都会出现内容，同时底部状态变为‘Tree construction completed.'
 
- ![image-20260606233947070](C:\Users\嵇兕\AppData\Roaming\Typora\typora-user-images\image-20260606233947070.png)
+ ![Completed](images/Builder_completed.png)
 
 其中Distance Matrix可以滚动查看，Phologenetic Tree可以点击**Vieew Full Size**查看大图和保存图片
 
-![image-20260606234538384](C:\Users\嵇兕\AppData\Roaming\Typora\typora-user-images\image-20260606234538384.png)
+![Tree](images/tree.png)
 
 6.说明
 
 由于UPGMA算法适合对序列差异小的基因序列进行分析和建树，并且UPGMA算法本身不支持长度不同的序列比较，本项目对输入序列进行了截取到最短序列的长度的暴力处理，当序列长度差异不超过5%时可认为是可信的。但是序列长度差异更大的基因不建议用此方法建树。本项目遇到这类序列组会发出警告。
 
-![image-20260607002615263](C:\Users\嵇兕\AppData\Roaming\Typora\typora-user-images\image-20260607002615263.png)
+![Warning](images/warning.png)
 
 用户可以使用提供的数据进行体验，也可以到Genbank下载fasta格式的基因序列，这里提供NCBI的整合链接[Home - Nucleotide - NCBI](https://www.ncbi.nlm.nih.gov/nucleotide/)
 
