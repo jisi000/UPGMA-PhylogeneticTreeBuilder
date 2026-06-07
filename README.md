@@ -96,7 +96,7 @@ DNA序列有ATGC四种可能，对于genbank中的基因序列资源，可能含
 
 格式展示
 
-![image-20260607004603530](C:\Users\嵇兕\AppData\Roaming\Typora\typora-user-images\image-20260607004603530.png)
+![Fasta](images\fasta.png)
 
 2.将 `tree.py`、`upgma.py`、`sequence.py`、`gui.py`放在根目录下，确保文件之间的import可执行
 
