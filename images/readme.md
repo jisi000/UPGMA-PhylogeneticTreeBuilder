@@ -1,1 +1,1 @@
-本文件夹用于markdown文档的图片显示
+这里是markdown文档的图床
